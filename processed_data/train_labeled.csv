@@ -1,0 +1,521 @@
+lesion_id,image_id,dx,dx_type,age,sex,localization,dataset,image_path,label
+HAM_0000013,ISIC_0024655,nv,follow_up,30.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024655.jpg,0
+HAM_0003151,ISIC_0024556,nv,follow_up,50.0,female,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024556.jpg,0
+HAM_0002803,ISIC_0028110,nv,histo,40.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028110.jpg,0
+HAM_0004991,ISIC_0032279,nv,histo,65.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032279.jpg,0
+HAM_0001629,ISIC_0032317,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032317.jpg,0
+HAM_0002849,ISIC_0032229,nv,follow_up,80.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032229.jpg,0
+HAM_0005987,ISIC_0029993,nv,histo,80.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029993.jpg,0
+HAM_0001257,ISIC_0024614,nv,follow_up,35.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024614.jpg,0
+HAM_0002946,ISIC_0031663,nv,histo,40.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031663.jpg,0
+HAM_0006082,ISIC_0027500,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027500.jpg,0
+HAM_0003463,ISIC_0031388,nv,follow_up,55.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031388.jpg,0
+HAM_0004319,ISIC_0026686,nv,follow_up,50.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026686.jpg,0
+HAM_0001921,ISIC_0032205,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032205.jpg,0
+HAM_0002940,ISIC_0024791,nv,follow_up,50.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024791.jpg,0
+HAM_0000626,ISIC_0025267,nv,histo,35.0,female,foot,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025267.jpg,0
+HAM_0004066,ISIC_0026390,nv,follow_up,30.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026390.jpg,0
+HAM_0005166,ISIC_0024815,nv,follow_up,25.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024815.jpg,0
+HAM_0002700,ISIC_0025011,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025011.jpg,0
+HAM_0006881,ISIC_0028580,nv,histo,60.0,female,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028580.jpg,0
+HAM_0004412,ISIC_0029531,nv,histo,35.0,female,abdomen,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029531.jpg,0
+HAM_0006716,ISIC_0024434,nv,follow_up,40.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024434.jpg,0
+HAM_0005717,ISIC_0032658,nv,consensus,30.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032658.jpg,0
+HAM_0007612,ISIC_0025688,nv,follow_up,50.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025688.jpg,0
+HAM_0002442,ISIC_0026325,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026325.jpg,0
+HAM_0000644,ISIC_0027728,nv,follow_up,30.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027728.jpg,0
+HAM_0005015,ISIC_0026355,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026355.jpg,0
+HAM_0001557,ISIC_0029939,nv,follow_up,45.0,male,neck,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029939.jpg,0
+HAM_0002454,ISIC_0024628,nv,follow_up,45.0,male,hand,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024628.jpg,0
+HAM_0005284,ISIC_0029640,nv,histo,20.0,male,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029640.jpg,0
+HAM_0005453,ISIC_0027022,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027022.jpg,0
+HAM_0007362,ISIC_0030373,nv,follow_up,35.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030373.jpg,0
+HAM_0002953,ISIC_0025126,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025126.jpg,0
+HAM_0005773,ISIC_0031096,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031096.jpg,0
+HAM_0004022,ISIC_0028134,nv,follow_up,35.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028134.jpg,0
+HAM_0006745,ISIC_0026363,nv,follow_up,35.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026363.jpg,0
+HAM_0004771,ISIC_0024622,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024622.jpg,0
+HAM_0006655,ISIC_0025994,nv,follow_up,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025994.jpg,0
+HAM_0006633,ISIC_0028598,nv,histo,40.0,female,trunk,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028598.jpg,0
+HAM_0005395,ISIC_0028557,nv,histo,75.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028557.jpg,0
+HAM_0000177,ISIC_0025820,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025820.jpg,0
+HAM_0001806,ISIC_0026920,nv,follow_up,50.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026920.jpg,0
+HAM_0001090,ISIC_0031207,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031207.jpg,0
+HAM_0006192,ISIC_0027416,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027416.jpg,0
+HAM_0001975,ISIC_0030930,nv,histo,30.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030930.jpg,0
+HAM_0007551,ISIC_0032016,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032016.jpg,0
+HAM_0000944,ISIC_0027864,nv,follow_up,75.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027864.jpg,0
+HAM_0000228,ISIC_0025146,nv,follow_up,50.0,female,hand,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025146.jpg,0
+HAM_0000639,ISIC_0033768,nv,histo,70.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033768.jpg,0
+HAM_0007329,ISIC_0026583,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026583.jpg,0
+HAM_0005945,ISIC_0032053,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032053.jpg,0
+HAM_0005322,ISIC_0030068,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030068.jpg,0
+HAM_0004467,ISIC_0027687,nv,follow_up,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027687.jpg,0
+HAM_0006394,ISIC_0027635,nv,follow_up,50.0,male,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027635.jpg,0
+HAM_0005419,ISIC_0030524,nv,follow_up,35.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030524.jpg,0
+HAM_0004123,ISIC_0032216,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032216.jpg,0
+HAM_0003305,ISIC_0027756,nv,histo,25.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027756.jpg,0
+HAM_0004381,ISIC_0027426,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027426.jpg,0
+HAM_0004537,ISIC_0026361,nv,follow_up,60.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026361.jpg,0
+HAM_0003734,ISIC_0029767,nv,follow_up,40.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029767.jpg,0
+HAM_0007330,ISIC_0024521,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024521.jpg,0
+HAM_0007597,ISIC_0028274,nv,follow_up,50.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028274.jpg,0
+HAM_0004601,ISIC_0028443,nv,follow_up,45.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028443.jpg,0
+HAM_0007377,ISIC_0029695,nv,follow_up,55.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029695.jpg,0
+HAM_0007605,ISIC_0024699,nv,follow_up,25.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024699.jpg,0
+HAM_0004195,ISIC_0033383,nv,consensus,40.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033383.jpg,0
+HAM_0000224,ISIC_0024542,nv,follow_up,40.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024542.jpg,0
+HAM_0005290,ISIC_0026703,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026703.jpg,0
+HAM_0005085,ISIC_0029257,nv,histo,70.0,male,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029257.jpg,0
+HAM_0003961,ISIC_0026624,nv,follow_up,60.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026624.jpg,0
+HAM_0000278,ISIC_0024484,nv,follow_up,55.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024484.jpg,0
+HAM_0000300,ISIC_0030725,nv,follow_up,40.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030725.jpg,0
+HAM_0006584,ISIC_0024983,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024983.jpg,0
+HAM_0001533,ISIC_0028244,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028244.jpg,0
+HAM_0007394,ISIC_0030864,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030864.jpg,0
+HAM_0000357,ISIC_0025134,nv,follow_up,55.0,male,neck,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025134.jpg,0
+HAM_0004145,ISIC_0032749,nv,histo,40.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032749.jpg,0
+HAM_0007014,ISIC_0027498,nv,histo,45.0,female,abdomen,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027498.jpg,0
+HAM_0001931,ISIC_0026755,nv,follow_up,45.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026755.jpg,0
+HAM_0003823,ISIC_0027081,nv,follow_up,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027081.jpg,0
+HAM_0006411,ISIC_0027140,nv,consensus,15.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027140.jpg,0
+HAM_0003780,ISIC_0027123,nv,follow_up,30.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027123.jpg,0
+HAM_0004207,ISIC_0033858,nv,consensus,40.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033858.jpg,0
+HAM_0007554,ISIC_0028193,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028193.jpg,0
+HAM_0003409,ISIC_0025913,nv,follow_up,50.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025913.jpg,0
+HAM_0001660,ISIC_0027078,nv,follow_up,75.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027078.jpg,0
+HAM_0002279,ISIC_0031427,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031427.jpg,0
+HAM_0005254,ISIC_0031036,nv,consensus,5.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031036.jpg,0
+HAM_0001742,ISIC_0028456,nv,follow_up,40.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028456.jpg,0
+HAM_0004550,ISIC_0034105,nv,histo,35.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034105.jpg,0
+HAM_0000151,ISIC_0029350,nv,follow_up,35.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029350.jpg,0
+HAM_0002811,ISIC_0030632,nv,follow_up,35.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030632.jpg,0
+HAM_0001373,ISIC_0029999,nv,follow_up,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029999.jpg,0
+HAM_0005780,ISIC_0024625,nv,follow_up,40.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024625.jpg,0
+HAM_0001941,ISIC_0024790,nv,histo,75.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024790.jpg,0
+HAM_0007595,ISIC_0025288,nv,follow_up,65.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025288.jpg,0
+HAM_0003467,ISIC_0031089,nv,follow_up,30.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031089.jpg,0
+HAM_0001289,ISIC_0026725,nv,follow_up,55.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026725.jpg,0
+HAM_0003636,ISIC_0027124,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027124.jpg,0
+HAM_0002304,ISIC_0024648,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024648.jpg,0
+HAM_0006905,ISIC_0030451,nv,histo,85.0,male,foot,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030451.jpg,0
+HAM_0002254,ISIC_0028027,nv,follow_up,70.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028027.jpg,0
+HAM_0005732,ISIC_0025741,nv,follow_up,35.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025741.jpg,0
+HAM_0002076,ISIC_0024720,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024720.jpg,0
+HAM_0002135,ISIC_0032974,nv,histo,50.0,male,scalp,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032974.jpg,0
+HAM_0007003,ISIC_0032363,nv,histo,20.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032363.jpg,0
+HAM_0007444,ISIC_0033989,nv,histo,50.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033989.jpg,0
+HAM_0002006,ISIC_0025360,nv,follow_up,50.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025360.jpg,0
+HAM_0006717,ISIC_0027890,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027890.jpg,0
+HAM_0002179,ISIC_0028654,nv,follow_up,35.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028654.jpg,0
+HAM_0001842,ISIC_0028359,nv,follow_up,45.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028359.jpg,0
+HAM_0007404,ISIC_0030295,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030295.jpg,0
+HAM_0000760,ISIC_0025318,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025318.jpg,0
+HAM_0006197,ISIC_0028332,nv,histo,40.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028332.jpg,0
+HAM_0004675,ISIC_0031411,nv,histo,55.0,female,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031411.jpg,0
+HAM_0003150,ISIC_0025213,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025213.jpg,0
+HAM_0007022,ISIC_0026364,nv,follow_up,55.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026364.jpg,0
+HAM_0003116,ISIC_0030453,nv,follow_up,30.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030453.jpg,0
+HAM_0005451,ISIC_0029643,nv,follow_up,35.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029643.jpg,0
+HAM_0000749,ISIC_0029446,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029446.jpg,0
+HAM_0005904,ISIC_0024956,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024956.jpg,0
+HAM_0004750,ISIC_0029266,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029266.jpg,0
+HAM_0001141,ISIC_0028918,nv,histo,25.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028918.jpg,0
+HAM_0003628,ISIC_0031324,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031324.jpg,0
+HAM_0005508,ISIC_0032060,nv,follow_up,50.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032060.jpg,0
+HAM_0006664,ISIC_0029833,nv,histo,25.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029833.jpg,0
+HAM_0007292,ISIC_0031626,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031626.jpg,0
+HAM_0005110,ISIC_0025412,nv,histo,20.0,female,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025412.jpg,0
+HAM_0003609,ISIC_0030567,nv,consensus,30.0,male,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030567.jpg,0
+HAM_0004738,ISIC_0027512,nv,histo,85.0,male,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027512.jpg,0
+HAM_0005939,ISIC_0024327,nv,follow_up,50.0,female,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024327.jpg,0
+HAM_0007486,ISIC_0031500,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031500.jpg,0
+HAM_0002168,ISIC_0028002,nv,follow_up,35.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028002.jpg,0
+HAM_0005671,ISIC_0029697,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029697.jpg,0
+HAM_0002487,ISIC_0032503,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032503.jpg,0
+HAM_0007324,ISIC_0026398,nv,histo,40.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026398.jpg,0
+HAM_0007525,ISIC_0027994,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027994.jpg,0
+HAM_0005214,ISIC_0031114,nv,follow_up,75.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031114.jpg,0
+HAM_0000350,ISIC_0030921,nv,follow_up,60.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030921.jpg,0
+HAM_0006914,ISIC_0027462,nv,histo,75.0,male,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027462.jpg,0
+HAM_0002966,ISIC_0024509,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024509.jpg,0
+HAM_0003539,ISIC_0025897,nv,consensus,75.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025897.jpg,0
+HAM_0005897,ISIC_0027511,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027511.jpg,0
+HAM_0000636,ISIC_0027104,nv,follow_up,40.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027104.jpg,0
+HAM_0001026,ISIC_0033743,nv,histo,20.0,female,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033743.jpg,0
+HAM_0000984,ISIC_0024376,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024376.jpg,0
+HAM_0003905,ISIC_0029275,nv,follow_up,35.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029275.jpg,0
+HAM_0006957,ISIC_0028402,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028402.jpg,0
+HAM_0002974,ISIC_0027553,nv,follow_up,80.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027553.jpg,0
+HAM_0002458,ISIC_0026155,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026155.jpg,0
+HAM_0000677,ISIC_0025494,nv,follow_up,55.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025494.jpg,0
+HAM_0001936,ISIC_0027688,nv,histo,80.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027688.jpg,0
+HAM_0001355,ISIC_0028711,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028711.jpg,0
+HAM_0000570,ISIC_0027404,nv,follow_up,35.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027404.jpg,0
+HAM_0005859,ISIC_0030829,nv,histo,35.0,female,trunk,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030829.jpg,0
+HAM_0007578,ISIC_0030867,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030867.jpg,0
+HAM_0001109,ISIC_0027636,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027636.jpg,0
+HAM_0000043,ISIC_0030152,nv,follow_up,75.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030152.jpg,0
+HAM_0004477,ISIC_0026646,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026646.jpg,0
+HAM_0006643,ISIC_0033982,nv,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033982.jpg,0
+HAM_0005688,ISIC_0027186,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027186.jpg,0
+HAM_0000869,ISIC_0031109,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031109.jpg,0
+HAM_0004724,ISIC_0029725,nv,histo,55.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029725.jpg,0
+HAM_0002808,ISIC_0031503,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031503.jpg,0
+HAM_0002434,ISIC_0033253,nv,histo,40.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033253.jpg,0
+HAM_0005991,ISIC_0031505,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031505.jpg,0
+HAM_0005857,ISIC_0030132,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030132.jpg,0
+HAM_0003515,ISIC_0025862,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025862.jpg,0
+HAM_0003595,ISIC_0027621,nv,follow_up,40.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027621.jpg,0
+HAM_0000123,ISIC_0032293,nv,follow_up,50.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032293.jpg,0
+HAM_0002517,ISIC_0031838,nv,histo,60.0,male,abdomen,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031838.jpg,0
+HAM_0001504,ISIC_0025274,nv,follow_up,45.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025274.jpg,0
+HAM_0002238,ISIC_0031238,nv,histo,60.0,female,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031238.jpg,0
+HAM_0007046,ISIC_0027401,nv,histo,65.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027401.jpg,0
+HAM_0002750,ISIC_0034136,nv,histo,60.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034136.jpg,0
+HAM_0006694,ISIC_0029657,nv,follow_up,45.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029657.jpg,0
+HAM_0004089,ISIC_0026589,nv,follow_up,45.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026589.jpg,0
+HAM_0001333,ISIC_0028948,nv,follow_up,35.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028948.jpg,0
+HAM_0000214,ISIC_0033364,nv,consensus,25.0,female,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033364.jpg,0
+HAM_0002302,ISIC_0029633,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029633.jpg,0
+HAM_0003815,ISIC_0024715,nv,consensus,40.0,male,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024715.jpg,0
+HAM_0000448,ISIC_0026210,nv,histo,25.0,male,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026210.jpg,0
+HAM_0006599,ISIC_0025141,nv,consensus,60.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025141.jpg,0
+HAM_0002219,ISIC_0031679,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031679.jpg,0
+HAM_0005686,ISIC_0033745,nv,histo,25.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033745.jpg,0
+HAM_0002098,ISIC_0030218,nv,follow_up,35.0,female,face,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030218.jpg,0
+HAM_0004529,ISIC_0029245,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029245.jpg,0
+HAM_0003794,ISIC_0029429,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029429.jpg,0
+HAM_0004966,ISIC_0029508,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029508.jpg,0
+HAM_0006379,ISIC_0033990,nv,histo,30.0,female,neck,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033990.jpg,0
+HAM_0006943,ISIC_0027336,nv,follow_up,55.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027336.jpg,0
+HAM_0002239,ISIC_0028021,nv,follow_up,70.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028021.jpg,0
+HAM_0002927,ISIC_0028012,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028012.jpg,0
+HAM_0001813,ISIC_0030858,nv,histo,60.0,male,trunk,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030858.jpg,0
+HAM_0001712,ISIC_0030793,nv,histo,45.0,male,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030793.jpg,0
+HAM_0001449,ISIC_0028967,nv,follow_up,45.0,female,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028967.jpg,0
+HAM_0005230,ISIC_0027127,nv,histo,55.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027127.jpg,0
+HAM_0000691,ISIC_0026535,nv,follow_up,50.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026535.jpg,0
+HAM_0003084,ISIC_0026191,nv,follow_up,45.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026191.jpg,0
+HAM_0002786,ISIC_0029258,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029258.jpg,0
+HAM_0000666,ISIC_0026122,nv,consensus,0.0,male,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026122.jpg,0
+HAM_0004842,ISIC_0026854,nv,follow_up,60.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026854.jpg,0
+HAM_0000306,ISIC_0029253,nv,follow_up,65.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029253.jpg,0
+HAM_0002643,ISIC_0030017,nv,follow_up,80.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030017.jpg,0
+HAM_0002945,ISIC_0029077,nv,follow_up,30.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029077.jpg,0
+HAM_0006055,ISIC_0031456,nv,follow_up,75.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031456.jpg,0
+HAM_0002825,ISIC_0031296,nv,follow_up,75.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031296.jpg,0
+HAM_0007166,ISIC_0030878,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030878.jpg,0
+HAM_0000873,ISIC_0025012,nv,follow_up,40.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025012.jpg,0
+HAM_0000576,ISIC_0025585,nv,follow_up,55.0,male,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025585.jpg,0
+HAM_0000226,ISIC_0024854,nv,histo,15.0,male,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024854.jpg,0
+HAM_0007181,ISIC_0031964,nv,follow_up,50.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031964.jpg,0
+HAM_0003405,ISIC_0024580,nv,follow_up,35.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024580.jpg,0
+HAM_0000684,ISIC_0028439,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028439.jpg,0
+HAM_0006505,ISIC_0031343,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031343.jpg,0
+HAM_0003592,ISIC_0031416,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031416.jpg,0
+HAM_0007599,ISIC_0029255,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029255.jpg,0
+HAM_0001403,ISIC_0025852,nv,follow_up,50.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025852.jpg,0
+HAM_0000885,ISIC_0025293,nv,follow_up,40.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025293.jpg,0
+HAM_0003748,ISIC_0031051,nv,follow_up,40.0,male,chest,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031051.jpg,0
+HAM_0005754,ISIC_0029684,nv,follow_up,35.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029684.jpg,0
+HAM_0006323,ISIC_0026805,nv,histo,75.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026805.jpg,0
+HAM_0004789,ISIC_0031652,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031652.jpg,0
+HAM_0007401,ISIC_0031849,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031849.jpg,0
+HAM_0006901,ISIC_0026700,nv,follow_up,55.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026700.jpg,0
+HAM_0006341,ISIC_0024681,nv,follow_up,35.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024681.jpg,0
+HAM_0006788,ISIC_0026482,nv,follow_up,65.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026482.jpg,0
+HAM_0000595,ISIC_0025991,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025991.jpg,0
+HAM_0000444,ISIC_0029118,nv,follow_up,55.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029118.jpg,0
+HAM_0005805,ISIC_0027505,nv,histo,20.0,female,chest,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027505.jpg,0
+HAM_0007266,ISIC_0031909,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031909.jpg,0
+HAM_0002426,ISIC_0024348,nv,follow_up,40.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024348.jpg,0
+HAM_0002037,ISIC_0033733,nv,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033733.jpg,0
+HAM_0003696,ISIC_0032945,nv,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032945.jpg,0
+HAM_0007547,ISIC_0025429,nv,follow_up,65.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025429.jpg,0
+HAM_0000255,ISIC_0031786,nv,follow_up,70.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031786.jpg,0
+HAM_0002175,ISIC_0028369,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028369.jpg,0
+HAM_0001829,ISIC_0027779,nv,follow_up,70.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027779.jpg,0
+HAM_0003965,ISIC_0025652,nv,consensus,15.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025652.jpg,0
+HAM_0004438,ISIC_0029712,nv,follow_up,45.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029712.jpg,0
+HAM_0004785,ISIC_0030788,nv,follow_up,60.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030788.jpg,0
+HAM_0003473,ISIC_0024417,nv,follow_up,75.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024417.jpg,0
+HAM_0004725,ISIC_0032507,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032507.jpg,0
+HAM_0001777,ISIC_0034084,nv,histo,35.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034084.jpg,0
+HAM_0000384,ISIC_0030506,nv,follow_up,35.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030506.jpg,0
+HAM_0004283,ISIC_0028357,nv,histo,50.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028357.jpg,0
+HAM_0004410,ISIC_0032428,nv,histo,60.0,male,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032428.jpg,0
+HAM_0002408,ISIC_0031359,nv,consensus,65.0,male,neck,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031359.jpg,0
+HAM_0003918,ISIC_0029127,nv,histo,55.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029127.jpg,0
+HAM_0003912,ISIC_0028367,nv,histo,35.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028367.jpg,0
+HAM_0003496,ISIC_0027308,nv,histo,50.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027308.jpg,0
+HAM_0003677,ISIC_0029409,nv,histo,55.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029409.jpg,0
+HAM_0000558,ISIC_0027547,nv,follow_up,40.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027547.jpg,0
+HAM_0003312,ISIC_0030516,nv,follow_up,35.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030516.jpg,0
+HAM_0001483,ISIC_0030752,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030752.jpg,0
+HAM_0006424,ISIC_0032256,nv,follow_up,20.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032256.jpg,0
+HAM_0001563,ISIC_0028633,nv,histo,55.0,female,ear,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028633.jpg,0
+HAM_0007056,ISIC_0025750,nv,follow_up,45.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025750.jpg,0
+HAM_0000343,ISIC_0027824,nv,follow_up,60.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027824.jpg,0
+HAM_0006607,ISIC_0026985,nv,follow_up,70.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026985.jpg,0
+HAM_0001897,ISIC_0026185,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026185.jpg,0
+HAM_0005709,ISIC_0028569,nv,follow_up,70.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028569.jpg,0
+HAM_0002531,ISIC_0027467,nv,follow_up,35.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027467.jpg,0
+HAM_0004295,ISIC_0029292,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029292.jpg,0
+HAM_0003751,ISIC_0026302,nv,follow_up,55.0,female,genital,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026302.jpg,0
+HAM_0002155,ISIC_0027696,nv,follow_up,40.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027696.jpg,0
+HAM_0007279,ISIC_0025405,nv,follow_up,50.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025405.jpg,0
+HAM_0005655,ISIC_0029618,nv,follow_up,35.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029618.jpg,0
+HAM_0004954,ISIC_0030156,nv,histo,35.0,female,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030156.jpg,0
+HAM_0002833,ISIC_0026889,nv,consensus,5.0,male,trunk,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026889.jpg,0
+HAM_0004248,ISIC_0028812,nv,follow_up,45.0,female,foot,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028812.jpg,0
+HAM_0001201,ISIC_0024691,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024691.jpg,0
+HAM_0005000,ISIC_0031312,nv,follow_up,50.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031312.jpg,0
+HAM_0003153,ISIC_0025565,nv,follow_up,40.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025565.jpg,0
+HAM_0000599,ISIC_0026543,nv,follow_up,75.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026543.jpg,0
+HAM_0006492,ISIC_0031092,nv,histo,35.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031092.jpg,0
+HAM_0007271,ISIC_0027862,nv,follow_up,30.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027862.jpg,0
+HAM_0004202,ISIC_0033623,nv,consensus,40.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033623.jpg,0
+HAM_0002300,ISIC_0028360,nv,histo,35.0,female,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028360.jpg,0
+HAM_0000616,ISIC_0024750,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024750.jpg,0
+HAM_0000733,ISIC_0024965,nv,follow_up,60.0,male,genital,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024965.jpg,0
+HAM_0001470,ISIC_0030361,nv,histo,40.0,female,upper extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030361.jpg,0
+HAM_0001420,ISIC_0025544,nv,follow_up,20.0,female,neck,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025544.jpg,0
+HAM_0002160,ISIC_0028712,nv,follow_up,65.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028712.jpg,0
+HAM_0004437,ISIC_0027316,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027316.jpg,0
+HAM_0002263,ISIC_0030252,nv,follow_up,25.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030252.jpg,0
+HAM_0001830,ISIC_0028057,nv,histo,55.0,female,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028057.jpg,0
+HAM_0000951,ISIC_0026003,nv,follow_up,50.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026003.jpg,0
+HAM_0003365,ISIC_0033682,nv,consensus,45.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033682.jpg,0
+HAM_0005920,ISIC_0026727,nv,follow_up,80.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026727.jpg,0
+HAM_0000432,ISIC_0033955,nv,histo,45.0,female,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033955.jpg,0
+HAM_0000165,ISIC_0033833,nv,histo,50.0,female,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033833.jpg,0
+HAM_0003552,ISIC_0029084,nv,follow_up,45.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029084.jpg,0
+HAM_0001650,ISIC_0030024,nv,follow_up,40.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030024.jpg,0
+HAM_0000312,ISIC_0029654,nv,histo,25.0,female,trunk,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029654.jpg,0
+HAM_0001880,ISIC_0026199,nv,follow_up,35.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026199.jpg,0
+HAM_0006838,ISIC_0028506,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028506.jpg,0
+HAM_0000377,ISIC_0025201,nv,follow_up,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025201.jpg,0
+HAM_0000976,ISIC_0030833,nv,histo,40.0,male,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030833.jpg,0
+HAM_0000030,ISIC_0031383,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031383.jpg,0
+HAM_0006470,ISIC_0027978,nv,histo,60.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027978.jpg,0
+HAM_0001508,ISIC_0029298,nv,histo,65.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029298.jpg,0
+HAM_0005853,ISIC_0029569,nv,follow_up,55.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029569.jpg,0
+HAM_0003065,ISIC_0031879,nv,follow_up,85.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031879.jpg,0
+HAM_0000889,ISIC_0026581,nv,histo,30.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026581.jpg,0
+HAM_0004267,ISIC_0031145,nv,histo,45.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031145.jpg,0
+HAM_0007294,ISIC_0025749,nv,follow_up,55.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025749.jpg,0
+HAM_0003028,ISIC_0031870,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031870.jpg,0
+HAM_0000142,ISIC_0028501,nv,follow_up,45.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028501.jpg,0
+HAM_0004209,ISIC_0034075,nv,consensus,40.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034075.jpg,0
+HAM_0001002,ISIC_0026348,nv,histo,55.0,male,upper extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026348.jpg,0
+HAM_0000523,ISIC_0031694,nv,histo,30.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031694.jpg,0
+HAM_0000855,ISIC_0033897,nv,histo,45.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033897.jpg,0
+HAM_0000652,ISIC_0028597,nv,follow_up,40.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028597.jpg,0
+HAM_0005323,ISIC_0027456,nv,follow_up,35.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027456.jpg,0
+HAM_0005894,ISIC_0025579,nv,histo,45.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025579.jpg,0
+HAM_0000219,ISIC_0030550,nv,follow_up,50.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030550.jpg,0
+HAM_0006295,ISIC_0033177,nv,histo,25.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033177.jpg,0
+HAM_0002339,ISIC_0026597,nv,follow_up,75.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026597.jpg,0
+HAM_0001622,ISIC_0032360,nv,follow_up,55.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032360.jpg,0
+HAM_0000326,ISIC_0028353,nv,follow_up,65.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028353.jpg,0
+HAM_0001003,ISIC_0028629,nv,follow_up,70.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028629.jpg,0
+HAM_0004390,ISIC_0031210,nv,follow_up,35.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031210.jpg,0
+HAM_0004378,ISIC_0025738,nv,follow_up,5.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025738.jpg,0
+HAM_0006428,ISIC_0030862,nv,follow_up,35.0,female,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030862.jpg,0
+HAM_0002013,ISIC_0026168,nv,follow_up,35.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026168.jpg,0
+HAM_0001775,ISIC_0030338,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030338.jpg,0
+HAM_0000175,ISIC_0028356,nv,follow_up,40.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028356.jpg,0
+HAM_0003557,ISIC_0026973,nv,follow_up,75.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026973.jpg,0
+HAM_0005313,ISIC_0033335,nv,consensus,20.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033335.jpg,0
+HAM_0007596,ISIC_0033223,nv,consensus,20.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033223.jpg,0
+HAM_0006412,ISIC_0027720,nv,follow_up,45.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027720.jpg,0
+HAM_0004647,ISIC_0025639,nv,follow_up,60.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025639.jpg,0
+HAM_0001790,ISIC_0032739,nv,histo,70.0,male,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032739.jpg,0
+HAM_0001084,ISIC_0030946,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030946.jpg,0
+HAM_0005056,ISIC_0031094,nv,histo,55.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031094.jpg,0
+HAM_0004225,ISIC_0026029,nv,histo,25.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026029.jpg,0
+HAM_0004307,ISIC_0031714,nv,follow_up,70.0,male,face,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031714.jpg,0
+HAM_0007496,ISIC_0028083,nv,follow_up,55.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028083.jpg,0
+HAM_0006820,ISIC_0025460,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025460.jpg,0
+HAM_0000033,ISIC_0031861,nv,follow_up,40.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031861.jpg,0
+HAM_0005750,ISIC_0029733,nv,histo,70.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029733.jpg,0
+HAM_0001360,ISIC_0029965,nv,follow_up,45.0,female,hand,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029965.jpg,0
+HAM_0003200,ISIC_0030805,nv,follow_up,45.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030805.jpg,0
+HAM_0006813,ISIC_0033167,nv,histo,30.0,female,trunk,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033167.jpg,0
+HAM_0005494,ISIC_0027161,nv,follow_up,55.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027161.jpg,0
+HAM_0004200,ISIC_0033567,nv,consensus,40.0,female,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033567.jpg,0
+HAM_0005654,ISIC_0032039,nv,follow_up,45.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032039.jpg,0
+HAM_0001737,ISIC_0030039,nv,histo,85.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030039.jpg,0
+HAM_0006959,ISIC_0032286,nv,follow_up,35.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032286.jpg,0
+HAM_0003474,ISIC_0025212,nv,follow_up,40.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025212.jpg,0
+HAM_0003705,ISIC_0025263,nv,follow_up,50.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025263.jpg,0
+HAM_0006913,ISIC_0031602,nv,consensus,65.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031602.jpg,0
+HAM_0001096,ISIC_0026932,nv,follow_up,50.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026932.jpg,0
+HAM_0000618,ISIC_0025840,nv,histo,30.0,female,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025840.jpg,0
+HAM_0005168,ISIC_0028277,nv,follow_up,55.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028277.jpg,0
+HAM_0003529,ISIC_0029871,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029871.jpg,0
+HAM_0007282,ISIC_0025690,nv,follow_up,50.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025690.jpg,0
+HAM_0002206,ISIC_0034020,nv,histo,35.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034020.jpg,0
+HAM_0004554,ISIC_0026065,nv,follow_up,65.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026065.jpg,0
+HAM_0001371,ISIC_0029322,nv,follow_up,50.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029322.jpg,0
+HAM_0001014,ISIC_0031278,nv,histo,70.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031278.jpg,0
+HAM_0005045,ISIC_0030701,nv,follow_up,40.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030701.jpg,0
+HAM_0001262,ISIC_0026677,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026677.jpg,0
+HAM_0001017,ISIC_0024507,nv,consensus,30.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024507.jpg,0
+HAM_0005311,ISIC_0025556,nv,follow_up,50.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025556.jpg,0
+HAM_0005969,ISIC_0028257,nv,follow_up,35.0,male,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028257.jpg,0
+HAM_0006319,ISIC_0028348,nv,follow_up,60.0,male,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028348.jpg,0
+HAM_0002415,ISIC_0026121,nv,follow_up,30.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026121.jpg,0
+HAM_0000579,ISIC_0032742,nv,histo,30.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032742.jpg,0
+HAM_0006239,ISIC_0034177,nv,consensus,60.0,male,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034177.jpg,0
+HAM_0002673,ISIC_0027686,nv,follow_up,55.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027686.jpg,0
+HAM_0007286,ISIC_0031978,nv,follow_up,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031978.jpg,0
+HAM_0007154,ISIC_0024719,nv,follow_up,70.0,male,upper extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024719.jpg,0
+HAM_0006490,ISIC_0024979,nv,follow_up,45.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024979.jpg,0
+HAM_0004152,ISIC_0025137,nv,follow_up,50.0,female,abdomen,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025137.jpg,0
+HAM_0000253,ISIC_0030012,nv,follow_up,45.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030012.jpg,0
+HAM_0006299,ISIC_0031582,nv,follow_up,40.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031582.jpg,0
+HAM_0002212,ISIC_0029988,nv,follow_up,40.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029988.jpg,0
+HAM_0007530,ISIC_0024918,mel,histo,30.0,male,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024918.jpg,1
+HAM_0006566,ISIC_0033569,mel,histo,65.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033569.jpg,1
+HAM_0000206,ISIC_0033925,mel,histo,65.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033925.jpg,1
+HAM_0006626,ISIC_0029914,mel,histo,60.0,male,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029914.jpg,1
+HAM_0004853,ISIC_0034101,mel,histo,80.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034101.jpg,1
+HAM_0003530,ISIC_0030929,mel,histo,55.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030929.jpg,1
+HAM_0005467,ISIC_0024640,mel,histo,55.0,female,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024640.jpg,1
+HAM_0001531,ISIC_0024951,mel,histo,70.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024951.jpg,1
+HAM_0003445,ISIC_0026229,mel,histo,65.0,male,abdomen,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026229.jpg,1
+HAM_0003448,ISIC_0026158,mel,histo,75.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026158.jpg,1
+HAM_0001791,ISIC_0032504,mel,histo,50.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032504.jpg,1
+HAM_0004637,ISIC_0032036,mel,histo,65.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032036.jpg,1
+HAM_0006011,ISIC_0034012,mel,histo,85.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0034012.jpg,1
+HAM_0005010,ISIC_0033180,mel,histo,30.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033180.jpg,1
+HAM_0003700,ISIC_0033300,mel,histo,40.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033300.jpg,1
+HAM_0006923,ISIC_0032656,mel,histo,80.0,male,foot,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032656.jpg,1
+HAM_0001600,ISIC_0024675,mel,histo,65.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024675.jpg,1
+HAM_0000910,ISIC_0028017,mel,histo,50.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028017.jpg,1
+HAM_0002955,ISIC_0029212,mel,histo,75.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029212.jpg,1
+HAM_0004607,ISIC_0026150,mel,histo,50.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026150.jpg,1
+HAM_0007574,ISIC_0033624,mel,histo,70.0,male,scalp,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033624.jpg,1
+HAM_0000022,ISIC_0031377,mel,histo,65.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031377.jpg,1
+HAM_0006722,ISIC_0030443,mel,histo,85.0,female,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030443.jpg,1
+HAM_0004302,ISIC_0033029,mel,histo,60.0,male,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033029.jpg,1
+HAM_0007238,ISIC_0031494,mel,histo,55.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031494.jpg,1
+HAM_0005953,ISIC_0033534,mel,histo,35.0,female,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033534.jpg,1
+HAM_0005746,ISIC_0030083,mel,histo,65.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030083.jpg,1
+HAM_0000814,ISIC_0025751,mel,histo,65.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025751.jpg,1
+HAM_0003625,ISIC_0032875,mel,histo,75.0,male,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032875.jpg,1
+HAM_0003256,ISIC_0032269,mel,histo,60.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032269.jpg,1
+HAM_0002613,ISIC_0030925,mel,histo,45.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030925.jpg,1
+HAM_0005403,ISIC_0026086,mel,histo,55.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026086.jpg,1
+HAM_0001753,ISIC_0024929,mel,histo,55.0,male,back,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024929.jpg,1
+HAM_0003617,ISIC_0029502,mel,histo,50.0,female,upper extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029502.jpg,1
+HAM_0005121,ISIC_0029591,mel,histo,65.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029591.jpg,1
+HAM_0001744,ISIC_0031339,mel,histo,60.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031339.jpg,1
+HAM_0000396,ISIC_0028481,mel,histo,70.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028481.jpg,1
+HAM_0002952,ISIC_0033518,mel,histo,80.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033518.jpg,1
+HAM_0003749,ISIC_0025268,mel,histo,65.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025268.jpg,1
+HAM_0001647,ISIC_0033730,mel,histo,70.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033730.jpg,1
+HAM_0006964,ISIC_0027163,mel,histo,60.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027163.jpg,1
+HAM_0004304,ISIC_0033324,mel,histo,85.0,male,upper extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033324.jpg,1
+HAM_0001344,ISIC_0032687,mel,histo,45.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032687.jpg,1
+HAM_0002392,ISIC_0028233,bkl,histo,55.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028233.jpg,2
+HAM_0001073,ISIC_0027990,bkl,histo,55.0,male,scalp,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027990.jpg,2
+HAM_0001186,ISIC_0033391,bkl,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033391.jpg,2
+HAM_0001417,ISIC_0032382,bkl,histo,55.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032382.jpg,2
+HAM_0001561,ISIC_0032740,bkl,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032740.jpg,2
+HAM_0007100,ISIC_0031989,bkl,histo,50.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031989.jpg,2
+HAM_0000843,ISIC_0029260,bkl,histo,70.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029260.jpg,2
+HAM_0007598,ISIC_0026514,bkl,histo,65.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026514.jpg,2
+HAM_0003140,ISIC_0027037,bkl,histo,70.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027037.jpg,2
+HAM_0004377,ISIC_0030561,bkl,histo,40.0,female,foot,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030561.jpg,2
+HAM_0003514,ISIC_0030369,bkl,confocal,70.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030369.jpg,2
+HAM_0005722,ISIC_0028525,bkl,consensus,75.0,male,face,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028525.jpg,2
+HAM_0000959,ISIC_0029288,bkl,histo,75.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029288.jpg,2
+HAM_0006211,ISIC_0025519,bkl,histo,50.0,male,neck,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025519.jpg,2
+HAM_0005404,ISIC_0028094,bkl,consensus,70.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028094.jpg,2
+HAM_0007220,ISIC_0025867,bkl,histo,60.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025867.jpg,2
+HAM_0003668,ISIC_0024383,bkl,consensus,70.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024383.jpg,2
+HAM_0001057,ISIC_0032045,bkl,histo,75.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032045.jpg,2
+HAM_0001200,ISIC_0025716,bkl,histo,85.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025716.jpg,2
+HAM_0004075,ISIC_0030276,bkl,histo,60.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030276.jpg,2
+HAM_0003187,ISIC_0028264,bkl,consensus,60.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028264.jpg,2
+HAM_0003129,ISIC_0029195,bkl,consensus,75.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029195.jpg,2
+HAM_0006143,ISIC_0032168,bkl,histo,60.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032168.jpg,2
+HAM_0004106,ISIC_0028943,bkl,histo,70.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028943.jpg,2
+HAM_0000948,ISIC_0033631,bkl,consensus,,unknown,unknown,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0033631.jpg,2
+HAM_0001435,ISIC_0028970,bkl,histo,65.0,female,hand,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028970.jpg,2
+HAM_0005743,ISIC_0025038,bkl,confocal,60.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025038.jpg,2
+HAM_0004249,ISIC_0031591,bkl,histo,60.0,female,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031591.jpg,2
+HAM_0003393,ISIC_0032113,bkl,consensus,45.0,female,face,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032113.jpg,2
+HAM_0005558,ISIC_0030812,bkl,histo,85.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030812.jpg,2
+HAM_0007260,ISIC_0028336,bkl,histo,60.0,male,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028336.jpg,2
+HAM_0003426,ISIC_0026959,bkl,consensus,75.0,male,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026959.jpg,2
+HAM_0002193,ISIC_0031000,bkl,histo,85.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031000.jpg,2
+HAM_0003301,ISIC_0025033,bkl,histo,60.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025033.jpg,2
+HAM_0005708,ISIC_0029791,bkl,histo,70.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029791.jpg,2
+HAM_0002366,ISIC_0029880,bkl,consensus,70.0,female,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029880.jpg,2
+HAM_0004556,ISIC_0028449,bkl,consensus,65.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028449.jpg,2
+HAM_0003179,ISIC_0029108,bkl,histo,35.0,female,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029108.jpg,2
+HAM_0006325,ISIC_0027739,bkl,histo,50.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027739.jpg,2
+HAM_0002957,ISIC_0026153,bkl,histo,70.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026153.jpg,2
+HAM_0002902,ISIC_0026443,bkl,histo,80.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026443.jpg,2
+HAM_0004309,ISIC_0028681,bkl,consensus,70.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028681.jpg,2
+HAM_0001896,ISIC_0030203,bkl,histo,50.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030203.jpg,2
+HAM_0000955,ISIC_0029036,bkl,consensus,70.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029036.jpg,2
+HAM_0000566,ISIC_0026794,bkl,histo,60.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026794.jpg,2
+HAM_0000779,ISIC_0032978,bkl,histo,70.0,male,chest,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032978.jpg,2
+HAM_0007381,ISIC_0027083,bkl,consensus,85.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027083.jpg,2
+HAM_0006190,ISIC_0025507,bkl,histo,65.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025507.jpg,2
+HAM_0006173,ISIC_0031961,bkl,histo,60.0,female,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031961.jpg,2
+HAM_0003420,ISIC_0024748,bkl,histo,45.0,male,abdomen,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024748.jpg,2
+HAM_0004940,ISIC_0028084,bcc,histo,80.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028084.jpg,3
+HAM_0004685,ISIC_0030767,bcc,histo,75.0,male,scalp,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030767.jpg,3
+HAM_0000065,ISIC_0028085,bcc,histo,50.0,female,abdomen,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028085.jpg,3
+HAM_0005334,ISIC_0031298,bcc,histo,75.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031298.jpg,3
+HAM_0001503,ISIC_0025940,bcc,histo,55.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025940.jpg,3
+HAM_0003177,ISIC_0031697,bcc,histo,60.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031697.jpg,3
+HAM_0001900,ISIC_0025557,bcc,histo,80.0,female,chest,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025557.jpg,3
+HAM_0003610,ISIC_0028937,bcc,histo,80.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028937.jpg,3
+HAM_0005469,ISIC_0030271,bcc,histo,75.0,male,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030271.jpg,3
+HAM_0003186,ISIC_0027297,bcc,histo,70.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027297.jpg,3
+HAM_0004849,ISIC_0032991,bcc,histo,80.0,female,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032991.jpg,3
+HAM_0006465,ISIC_0030813,bcc,histo,65.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030813.jpg,3
+HAM_0002717,ISIC_0031284,bcc,histo,75.0,male,face,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031284.jpg,3
+HAM_0000457,ISIC_0026855,bcc,histo,70.0,female,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026855.jpg,3
+HAM_0001388,ISIC_0032225,bcc,histo,70.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032225.jpg,3
+HAM_0001283,ISIC_0026845,bcc,histo,80.0,male,chest,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026845.jpg,3
+HAM_0007507,ISIC_0031056,bcc,histo,65.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031056.jpg,3
+HAM_0000092,ISIC_0028964,bcc,histo,45.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028964.jpg,3
+HAM_0004342,ISIC_0027976,bcc,histo,80.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027976.jpg,3
+HAM_0004627,ISIC_0029974,bcc,histo,85.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029974.jpg,3
+HAM_0005842,ISIC_0027601,bcc,histo,75.0,female,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027601.jpg,3
+HAM_0007474,ISIC_0024848,bcc,histo,80.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024848.jpg,3
+HAM_0006036,ISIC_0029713,akiec,histo,85.0,male,back,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029713.jpg,4
+HAM_0007037,ISIC_0030375,akiec,histo,65.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030375.jpg,4
+HAM_0006587,ISIC_0025780,akiec,histo,70.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025780.jpg,4
+HAM_0003262,ISIC_0026212,akiec,histo,45.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0026212.jpg,4
+HAM_0005282,ISIC_0025178,akiec,histo,65.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025178.jpg,4
+HAM_0001176,ISIC_0028644,akiec,histo,65.0,female,abdomen,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028644.jpg,4
+HAM_0003380,ISIC_0024418,akiec,histo,75.0,female,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024418.jpg,4
+HAM_0004722,ISIC_0029932,akiec,histo,70.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029932.jpg,4
+HAM_0000982,ISIC_0032356,akiec,histo,60.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032356.jpg,4
+HAM_0001890,ISIC_0030707,akiec,histo,80.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030707.jpg,4
+HAM_0001499,ISIC_0031929,akiec,histo,65.0,male,lower extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031929.jpg,4
+HAM_0001460,ISIC_0025637,akiec,histo,75.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025637.jpg,4
+HAM_0003107,ISIC_0030844,akiec,histo,80.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0030844.jpg,4
+HAM_0004976,ISIC_0028499,akiec,histo,80.0,female,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028499.jpg,4
+HAM_0003971,ISIC_0029634,akiec,histo,60.0,male,face,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029634.jpg,4
+HAM_0001337,ISIC_0032455,akiec,histo,80.0,male,upper extremity,rosendahl,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032455.jpg,4
+HAM_0000845,ISIC_0025244,vasc,consensus,45.0,female,trunk,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025244.jpg,5
+HAM_0006946,ISIC_0032614,vasc,histo,55.0,female,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032614.jpg,5
+HAM_0001091,ISIC_0031955,vasc,consensus,30.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0031955.jpg,5
+HAM_0006324,ISIC_0029889,vasc,histo,40.0,female,chest,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029889.jpg,5
+HAM_0005427,ISIC_0028885,vasc,consensus,75.0,male,back,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0028885.jpg,5
+HAM_0002498,ISIC_0032839,vasc,consensus,70.0,male,back,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0032839.jpg,5
+HAM_0007569,ISIC_0025373,df,consensus,35.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0025373.jpg,6
+HAM_0007129,ISIC_0027216,df,consensus,60.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027216.jpg,6
+HAM_0000902,ISIC_0027745,df,consensus,50.0,female,lower extremity,vidir_molemax,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0027745.jpg,6
+HAM_0004756,ISIC_0029248,df,histo,55.0,male,lower extremity,vienna_dias,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0029248.jpg,6
+HAM_0006188,ISIC_0024330,df,consensus,40.0,male,lower extremity,vidir_modern,C:\Users\PC\OneDrive - Cal Poly Pomona\cs4210\Project\Dataset ML-AI\HAM10000\ISIC_0024330.jpg,6

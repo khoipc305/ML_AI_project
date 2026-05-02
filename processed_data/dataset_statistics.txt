@@ -1,0 +1,60 @@
+HAM10000 Dataset Summary
+========================
+
+Full dataset: 7470
+Train: 5228
+Validation: 1121
+Test: 1121
+Labeled train: 520
+Unlabeled train: 4708
+
+Full class distribution:
+dx
+nv       5403
+bkl       727
+mel       614
+bcc       327
+akiec     228
+vasc       98
+df         73
+
+Train class distribution:
+dx
+nv       3781
+bkl       509
+mel       430
+bcc       229
+akiec     160
+vasc       68
+df         51
+
+Validation class distribution:
+dx
+nv       811
+bkl      109
+mel       92
+bcc       49
+akiec     34
+vasc      15
+df        11
+
+Test class distribution:
+dx
+nv       811
+bkl      109
+mel       92
+bcc       49
+akiec     34
+vasc      15
+df        11
+
+Labeled train class distribution:
+dx
+nv       378
+bkl       50
+mel       43
+bcc       22
+akiec     16
+vasc       6
+df         5
+
