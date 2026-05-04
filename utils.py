@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 import pandas as pd
 
-from config import CLASS_MAPPING, DATA_DIR, IMAGE_SIZE, NORMALIZE_MEAN, NORMALIZE_STD
+from config import BASE_DIR, CLASS_MAPPING, DATA_DIR, IMAGE_SIZE, NORMALIZE_MEAN, NORMALIZE_STD
 
 
 def load_metadata(metadata_path):
@@ -19,13 +19,25 @@ def load_metadata(metadata_path):
     return df
 
 
+def resolve_image_path(image_path):
+    # Turn a stored image_path into an absolute path on this machine.
+    # Stored paths are relative (e.g. "HAM10000/ISIC_0024306.jpg") so the
+    # project works for anyone who clones the repo, regardless of where
+    # they put it.
+    if os.path.isabs(image_path):
+        return image_path
+    return os.path.join(BASE_DIR, image_path)
+
+
 def verify_dataset(df, data_dir=DATA_DIR):
     # Attach each row's image path and drop rows whose image file is missing.
     df = df.copy()
-    # Build expected image path for each row (e.g. HAM10000/ISIC_0024306.jpg).
-    df["image_path"] = df["image_id"].apply(lambda image_id: os.path.join(data_dir, f"{image_id}.jpg"))
-    # Keep only rows where the image actually exists on disk.
-    df = df[df["image_path"].apply(os.path.exists)].copy()
+    # Absolute path used only to check that the file exists on disk.
+    abs_paths = df["image_id"].apply(lambda image_id: os.path.join(data_dir, f"{image_id}.jpg"))
+    df = df[abs_paths.apply(os.path.exists)].copy()
+    # Store a path relative to BASE_DIR so the CSV is portable across machines.
+    # Forward slashes work on Windows, macOS, and Linux.
+    df["image_path"] = df["image_id"].apply(lambda image_id: f"HAM10000/{image_id}.jpg")
     print(f"Verified {len(df)} images")
     return df
 
@@ -39,7 +51,10 @@ def remove_duplicate_lesions(df):
 
 
 def preprocess_image(image_path, target_size=IMAGE_SIZE):
-    # Load an image, convert to RGB, resize, and scale pixels to [0, 1]."
+    # Load an image, convert to RGB, resize, and scale pixels to [0, 1].
+    # Accepts both absolute paths and paths stored in our CSV files
+    # (which are relative to the project folder).
+    image_path = resolve_image_path(image_path)
     image = cv2.imread(image_path)                    # BGR uint8
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)    # Convert to RGB
     image = cv2.resize(image, target_size)            # Resize to IMAGE_SIZE
