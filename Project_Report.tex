@@ -284,8 +284,8 @@ and reduced to 100 components via Principal Component Analysis
 (PCA) before classification.
 
 \textit{K-Nearest Neighbors (KNN):} Trained on PCA-reduced features
-using Euclidean distance, with $k$ selected via grid search over
-$k \in \{3, 5, 7, 11\}$.
+using Euclidean distance, with $k$ selected via 5-fold cross-validated
+grid search on the training set over $k \in \{3, 5, 7, 11\}$.
 
 \textit{Decision Tree:} Trained using the Gini impurity criterion,
 with maximum depth tuned over $\{5, 10, 20, \text{None}\}$ on the

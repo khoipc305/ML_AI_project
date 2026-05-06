@@ -32,7 +32,7 @@ def evaluate(model_name: str, y_true: np.ndarray, y_pred: np.ndarray, y_prob: np
 	roc_aucs = {}
 	for i, cls in enumerate(CLASSES):
 		ovr_true = y_true == i	# isolate class to compare, one-vs-rest
-		roc_aucs[cls] = roc_auc_score(ovr_true, y_prob[:, 1])
+		roc_aucs[cls] = roc_auc_score(ovr_true, y_prob[:, i])
 
 	print(f"{model_name} Evaluation Results")
 	print(f"Macro-Averaged F1 Score: {macro_f1:.4f}")

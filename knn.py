@@ -4,12 +4,13 @@
 # with k selected using grid search over element k in set {3, 5, 7, 11}.
 
 
+import os
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.decomposition import PCA
 from sklearn.model_selection import GridSearchCV
-from config import TRAIN_LABELED_CSV, TEST_CSV
+from config import TRAIN_LABELED_CSV, TEST_CSV, DATA_DIR, RANDOM_SEED
 from utils import preprocess_image, normalize_image
 from eval_script import evaluate
 
@@ -22,8 +23,9 @@ def load_images(csv):
 	X = []
 	Y = []
 
-	for _, row in df.iterrows():
-		img = preprocess_image(row['image_path'])
+	for index, row in df.iterrows():
+		image_path = os.path.join(DATA_DIR, row['image_id'] + '.jpg')
+		img = preprocess_image(image_path)
 		img = normalize_image(img)
 		X.append(img.flatten())
 		Y.append(row['label'])
@@ -35,7 +37,7 @@ x_train, y_train = load_images(TRAIN_LABELED_CSV)
 x_test, y_test = load_images(TEST_CSV)
 
 # apply PCA
-pca = PCA(n_components=0.95)	# 95% variance retained
+pca = PCA(n_components=100, random_state=RANDOM_SEED)	# apply PCA (Exactly 100 components and a random seed)
 x_train = pca.fit_transform(x_train)
 x_test = pca.transform(x_test)
 
