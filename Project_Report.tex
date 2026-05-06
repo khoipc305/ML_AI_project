@@ -388,29 +388,15 @@ baseline checkpoint described above. Macro-F1, accuracy, per-class
 AUC-ROC, and confusion matrices will be reported in a single
 comparative table.
 
-\subsection{Planned Comparative Table}
+\subsection{Planned Comparative Reporting}
 Results from the four conditions will be aggregated in a single
-table produced by \texttt{eval\_script.py} (Macro-F1, accuracy,
-per-class AUC, confusion matrix), with one row per condition. A
-template is shown in Table~\ref{tab:results} so collaborators can
-fill in the numbers as each model is evaluated.
-
-\begin{table}[h]
-\centering
-\caption{Comparative results template (to be filled in once all
-four models have been evaluated on the test set with
-\texttt{eval\_script.py}).}
-\label{tab:results}
-\begin{tabular}{lccc}
-\hline
-\textbf{Model} & \textbf{Macro-F1} & \textbf{Accuracy} & \textbf{Mean AUC} \\ \hline
-KNN (PCA + Euclidean)         & --- & --- & --- \\
-Decision Tree (PCA + Gini)    & --- & --- & --- \\
-ResNet-18 supervised baseline & --- & --- & --- \\
-ResNet-18 self-training       & --- & --- & --- \\
-\hline
-\end{tabular}
-\end{table}
+table produced by \texttt{eval\_script.py}, with one row per model
+and columns for macro-F1, accuracy, mean per-class AUC, and a
+reference to the corresponding confusion matrix figure. The same
+script also saves a per-model PNG figure with the confusion matrix
+and one-vs-rest ROC curves, which will be included as
+Figures~1--4 in the next iteration of this report once each model
+has been evaluated on the test set.
 
 \subsection{Expected Findings}
 Based on related work (Section~\ref{sec:related}) and the strongly
@@ -449,8 +435,10 @@ existing supervised baseline on the test set with
 \texttt{eval\_script.py}, (ii) train and evaluate the KNN and
 Decision Tree baselines on PCA-reduced features, and (iii)
 implement and run the iterative self-training loop warm-started
-from \texttt{resnet18\_supervised\_baseline.pth}, completing
-Table~\ref{tab:results}. Beyond the four planned conditions, we
+from \texttt{resnet18\_supervised\_baseline.pth}, then aggregate
+all four sets of metrics into a single comparative table and the
+corresponding confusion matrix and ROC figures produced by
+\texttt{eval\_script.py}. Beyond the four planned conditions, we
 intend to run sensitivity analyses on (a) the labeled-data
 percentage, (b) the self-training threshold schedule, and (c) the
 choice of CNN backbone (e.g., ResNet-50, EfficientNet-B0) versus
