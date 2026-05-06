@@ -123,5 +123,5 @@ for epoch in range(num_epochs):
     # Step the learning rate down
     scheduler.step()
 
-# ----Saving the Model for Semi-Superivsed Looping (Sofia Truong)----
+# ----Saving the Model for Semi-Superivsed Looping----
 torch.save(model.state_dict(), 'resnet18_supervised_baseline.pth')
