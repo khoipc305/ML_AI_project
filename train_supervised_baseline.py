@@ -20,7 +20,16 @@ import torchvision.transforms as transforms
 # ----Loading Real Data from CSV Files----
 import pandas as pd
 from utils import preprocess_image, normalize_image
-from config import DATA_DIR
+from config import DATA_DIR, RANDOM_SEED
+
+import numpy as np
+
+# ---- Seed Everything for Reproducibility ----
+random.seed(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+torch.manual_seed(RANDOM_SEED)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(RANDOM_SEED)
 
 # 1. Reads CSV file
 df = pd.read_csv('processed_data/train_labeled.csv')
@@ -75,8 +84,14 @@ class_weights = torch.tensor([0.2, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0])
 # Sees how wrong the model is
 criterion = nn.CrossEntropyLoss(weight=class_weights)
 
+# Define the number of epochs first
+num_epochs = 20
+
 # Algorithm updates the model to make it better
-optimizer = optim.Adam(model.parameters(), lr=1e-4)
+optimizer = optim.Adam(model.parameters(), lr=1e-4) #
+
+# Now num_epochs is defined, so this line will work
+scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=num_epochs)
 
 # ----Manual Training Loop----
 num_epochs = 20
@@ -104,6 +119,9 @@ for epoch in range(num_epochs):
     # Printing average error rate for this epoch
     average_loss = total_loss / len(train_loader)
     print(f"Epoch {epoch+1} completed. Error Loss: {average_loss:.4f}")
+    
+    # Step the learning rate down
+    scheduler.step()
 
 # ----Saving the Model for Semi-Superivsed Looping (Sofia Truong)----
 torch.save(model.state_dict(), 'resnet18_supervised_baseline.pth')
