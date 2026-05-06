@@ -1,0 +1,526 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% Template version as of 6/27/2024
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{booktabs}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Semi-Supervised Learning for Skin Lesion Classification:
+Comparing CNNs to Traditional ML Baselines\\
+\large CS~4210 Final Project Report}
+
+\author{\IEEEauthorblockN{Andrew Mazmanian, Abigail Moran, Eric Pham,
+Khoi Pham, and Sofia Truong}
+\IEEEauthorblockA{\textit{Department of Computer Science} \\
+\textit{California State Polytechnic University, Pomona}\\
+Pomona, USA \\
+\{amazmanian, abigailmoran, ericpham, khoinpham, satruong\}@cpp.edu}}
+
+\maketitle
+
+\begin{abstract}
+Detecting skin cancer with machine learning usually requires large
+amounts of expertly labeled images, which are expensive and difficult
+to obtain in clinical practice. In this project we use the HAM10000
+dermatoscopic dataset and artificially withhold most labels in the
+training partition to simulate a real-world setting where data is
+mostly unlabeled. We build a self-training Convolutional Neural
+Network (CNN) pipeline and compare it against two traditional
+baselines (K-Nearest Neighbors and Decision Tree) and a fully
+supervised CNN baseline. To this point we have completed the
+data-preparation pipeline (image verification, lesion-aware
+deduplication, label encoding, stratified train/validation/test
+splitting of 5{,}228 / 1{,}121 / 1{,}121 samples after deduplication,
+and a configurable labeled/unlabeled split of 520 labeled and
+4{,}708 unlabeled samples) and trained a first CNN supervised
+baseline (ResNet-18 pretrained on ImageNet, 20 epochs, Adam,
+class-weighted cross-entropy) on the 520-image labeled set. The
+remaining experiments---KNN and Decision Tree baselines, and
+CNN with iterative self-training---together with held-out test
+evaluation across all four conditions will be reported next.
+Preliminary expectations are that the self-training CNN will
+outperform both classical baselines and the supervised-only CNN
+under the same labeled-data budget.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Convolutional Neural Networks, Image Classification, Machine Learning,
+Self-Training, Semi-Supervised Learning, Skin Cancer.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Skin cancer is one of the most prevalent cancers worldwide, but it is
+highly treatable when detected early, even for the more
+life-threatening variants such as melanoma. The problem lies in the
+necessity for early detection. Current practice involves physicians
+manually evaluating lesion images using dermoscopic imaging, and
+considering asymmetry, border irregularity, color variation, diameter,
+and evolution by hand. Even with support from modern technology, this
+can be time-consuming, subject to the practitioner's experience, and
+error-prone due to the variable and complex nature of skin lesions.
+
+The use of classification models as a diagnostic tool is actively
+being studied, and although considerable improvements have been made,
+limitations still exist within traditional baseline models that use
+the K-Nearest Neighbor (KNN) and Decision Tree algorithms. While
+these methods can perform reasonably well when paired with carefully
+engineered features, they do not inherently learn the complex visual
+patterns that exist in skin lesion images, which limits their
+effectiveness \cite{wu2022skin}.
+
+Convolutional Neural Networks (CNNs) are considered more effective
+for this task, since they automatically learn hierarchical visual
+features directly from raw image data without manual feature
+engineering. Their effectiveness comes with a practical constraint:
+they require large volumes of labeled training data, which can be
+difficult to obtain in a clinical setting. Another challenge is the
+class imbalance present in dermatological datasets. Semi-supervised
+approaches such as self-training can address these issues by using
+unlabeled data alongside a small labeled set, gradually expanding
+the training pool as model confidence improves \cite{wu2022skin}.
+
+\textbf{Challenges.} Three challenges drive the design of this project:
+(1) severe class imbalance in HAM10000, where melanocytic nevi (\texttt{nv})
+account for over 60\% of samples; (2) data leakage risk, since multiple
+images may share the same physical \texttt{lesion\_id}; and (3) limited
+labeled data, simulated in our setup by retaining only a small fraction
+of the training labels.
+
+\textbf{Road map.} The remainder of this report is organized as follows.
+Section~\ref{sec:related} surveys related work and reported baselines
+for HAM10000. Section~\ref{sec:dataset} describes the dataset,
+preprocessing, and the resulting splits. Section~\ref{sec:method}
+details our four model conditions and the self-training procedure.
+Section~\ref{sec:results} reports our completed data-preparation
+results and outlines the experimental protocol for model evaluation.
+Section~\ref{sec:conclusion} summarizes achievements and future
+directions, and Section~\ref{sec:supp} provides links to the LaTeX
+source and code repository.
+
+\section{Related Work}
+\label{sec:related}
+Wu \textit{et al.}~\cite{wu2022skin} provide a systematic review of
+deep-learning approaches to skin cancer classification, reporting
+that CNN-based methods consistently outperform classical
+feature-engineering pipelines (KNN, SVM, decision trees) on
+dermatoscopic datasets, while also highlighting class imbalance and
+limited labeled data as recurring obstacles.
+
+The HAM10000 dataset itself was introduced by Tschandl
+\textit{et al.}~\cite{tschandl2018,b3} as a large multi-source
+collection of dermatoscopic images, and was adopted as the basis
+of the ISIC 2018 Skin Lesion Analysis Challenge
+\cite{codella2019}. In ISIC 2018 Task~3, top submissions reached
+balanced multi-class accuracies in the 70--90\% range on the held-out
+test set; the challenge organizers report macro-averaged metrics to
+discourage models from exploiting the dominance of \texttt{nv}.
+
+Public Kaggle baselines on HAM10000 \cite{kaggle2018} typically
+report ResNet-style CNNs in the 75--85\% top-1 accuracy range under
+fully supervised settings, while shallow baselines (KNN, Decision
+Tree) on flattened or PCA-reduced pixels report substantially lower
+macro-F1 scores, often dominated by the majority class. These
+patterns motivate our four-way comparison: two classical baselines,
+one supervised CNN, and one self-training CNN.
+
+\section{Dataset}
+\label{sec:dataset}
+
+\begin{table}[h]
+\centering
+\caption{Image Data Characteristics of the HAM10000 Dataset}
+\begin{tabular}{ll}
+\hline
+\textbf{Attribute} & \textbf{Description} \\ \hline
+Feature Type & Raw dermatoscopic images \\
+Total Samples & 10,015 images \\
+Image Content & Single centered skin lesion per image \\
+Image Type & RGB dermatoscopic images \\
+Original Resolution & Approximately $450 \times 600$ pixels \\
+Preprocessed Resolution & $224 \times 224 \times 3$ \\
+Format & JPEG (.jpg) \\
+\hline
+\end{tabular}
+\end{table}
+
+The HAM10000 (Human Against Machine with 10{,}000 training images)
+dataset \cite{tschandl2018} is a widely used benchmark for skin
+lesion classification using machine learning. To address the lack
+of large, diverse, annotated dermatoscopic datasets in medical
+imaging research, HAM10000 is multi-sourced from different
+institutions and imaging modalities. Methods of data procurement,
+established as ``ground truths,'' are dominated by histopathology
+(\textit{histo}, over 50\%), with the remainder coming from follow-up
+examinations (\textit{follow up}), expert consensus
+(\textit{consensus}), and in-vivo confocal microscopy
+(\textit{confocal}).
+
+The 10{,}015 images are categorized into seven clinically significant
+classes of pigmented skin lesions: actinic keratoses /
+intraepithelial carcinoma (\texttt{akiec}), basal cell carcinoma
+(\texttt{bcc}), benign keratosis-like lesions (\texttt{bkl}),
+dermatofibroma (\texttt{df}), melanoma (\texttt{mel}), melanocytic
+nevi (\texttt{nv}), and vascular lesions (\texttt{vasc}).
+
+\subsection{Dataset Characteristics and Limitations}
+Two notable limitations require careful handling to ensure optimal
+model accuracy: severe class imbalance (with melanocytic nevi
+comprising over 60\% of samples) and potential data leakage from
+multiple images sharing the same \texttt{lesion\_id}
+\cite{tschandl2018,b3,kaggle2018}. While the input feature (image
+size) varies based on the modeling approach, the target output is
+consistently one of the seven diagnostic labels.
+
+\subsection{Preprocessing and Splits}
+\label{sec:splits}
+Our preparation pipeline performs the following steps:
+\begin{enumerate}
+    \item Verify that every image referenced in the metadata file
+    exists on disk.
+    \item Drop duplicate images sharing the same \texttt{lesion\_id},
+    keeping a single representative per lesion.
+    \item Encode the seven diagnoses into integer labels $\{0,\ldots,6\}$.
+    \item Resize all images to $224 \times 224$ pixels and normalize
+    using the ImageNet channel-wise mean
+    $\mu = [0.485, 0.456, 0.406]$ and standard deviation
+    $\sigma = [0.229, 0.224, 0.225]$, consistent with our pretrained
+    backbone.
+    \item Split the deduplicated set into training (70\%),
+    validation (15\%), and test (15\%) using stratified sampling
+    on the diagnosis label.
+    \item Within the training partition, sample a labeled subset
+    per class, treating the rest as unlabeled. The split is
+    configurable through \texttt{LABELED\_DATA\_PERCENTAGE} in
+    \texttt{config.py} so we can sweep this ratio in experiments.
+\end{enumerate}
+
+After deduplication, $2{,}545$ duplicate lesion images were removed,
+leaving $7{,}470$ unique lesions. Table~\ref{tab:splits} summarizes
+the resulting partitions, and Table~\ref{tab:classdist} reports the
+per-class counts.
+
+\begin{table}[h]
+\centering
+\caption{Data partitions after deduplication.}
+\label{tab:splits}
+\begin{tabular}{lr}
+\hline
+\textbf{Partition} & \textbf{\#Samples} \\ \hline
+Full (after dedup)         & 7{,}470 \\
+Training                   & 5{,}228 \\
+Validation                 & 1{,}121 \\
+Test                       & 1{,}121 \\
+\quad Labeled training     & 520 \\
+\quad Unlabeled training   & 4{,}708 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Per-class counts after lesion-level deduplication.}
+\label{tab:classdist}
+\begin{tabular}{lr}
+\hline
+\textbf{Class} & \textbf{\#Samples} \\ \hline
+\texttt{nv}    & 5{,}403 \\
+\texttt{bkl}   &   727 \\
+\texttt{mel}   &   614 \\
+\texttt{bcc}   &   327 \\
+\texttt{akiec} &   228 \\
+\texttt{vasc}  &    98 \\
+\texttt{df}    &    73 \\
+\hline
+\textbf{Total} & \textbf{7{,}470} \\
+\hline
+\end{tabular}
+\end{table}
+
+The final partitions clearly preserve the long-tailed class
+distribution: \texttt{nv} dominates while \texttt{vasc} and
+\texttt{df} are heavily under-represented. This motivates the use of
+class-weighted losses, stratified sampling, and macro-averaged
+metrics throughout our experiments.
+
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Dataset Preparation and Preprocessing}
+The pipeline described in Section~\ref{sec:splits} is implemented
+in \texttt{data\_preparation.py} and \texttt{utils.py}. To make the
+project portable across collaborators' machines, the saved CSVs
+store image paths relative to the project root and the loader
+resolves them at runtime, so no machine-specific absolute paths
+appear in the repository.
+
+\subsection{Train/Validation/Test Split and Semi-Supervised Setup}
+The dataset is split into training (70\%), validation (15\%), and
+test (15\%) using stratified sampling. To simulate a semi-supervised
+setting, only a small fraction of the training labels is retained,
+while the remainder is treated as unlabeled \cite{codella2019}. The
+validation and test sets remain fully labeled. This setup enables
+controlled comparison of supervised baselines and self-training CNN
+models under limited-label conditions.
+
+\subsection{Machine Learning Models}
+
+\subsubsection{Traditional Supervised Baselines}
+To establish benchmarks under labeled-only conditions, we train two
+classical classifiers on the labeled split. Each image is flattened
+and reduced to 100 components via Principal Component Analysis
+(PCA) before classification.
+
+\textit{K-Nearest Neighbors (KNN):} Trained on PCA-reduced features
+using Euclidean distance, with $k$ selected via grid search over
+$k \in \{3, 5, 7, 11\}$.
+
+\textit{Decision Tree:} Trained using the Gini impurity criterion,
+with maximum depth tuned over $\{5, 10, 20, \text{None}\}$ on the
+validation set.
+
+These baselines illustrate the performance ceiling of traditional
+methods on complex image data under limited-label conditions.
+
+\subsubsection{CNN Supervised Baseline}
+We fine-tune a ResNet-18 backbone pretrained on ImageNet, replacing
+the final layer with a seven-class output head. The model is
+trained on the labeled split using a class-weighted cross-entropy
+loss, the Adam optimizer with learning rate $1 \times 10^{-4}$,
+and a cosine annealing scheduler over 20 epochs. Data augmentation
+includes random horizontal flips, rotation up to $20^{\circ}$, and
+color jitter. The current implementation in
+\texttt{train\_supervised\_baseline.py} follows this recipe with two
+pragmatic simplifications that we report transparently: (i) the
+class weights are set to a fixed vector $[0.2, 1, 1, 1, 1, 1, 1]$ that
+downweights the majority class \texttt{nv} rather than using exact
+inverse-frequency weights, and (ii) the cosine annealing scheduler
+is not yet applied, so the learning rate is held constant at
+$1 \times 10^{-4}$. Both will be revisited in the next iteration
+alongside validation-based early stopping.
+
+\subsubsection{CNN with Self-Training}
+Our primary model extends the CNN baseline by incorporating
+unlabeled data through iterative self-training:
+\begin{enumerate}
+    \item Train the CNN on the labeled set.
+    \item Generate pseudo-labels for all unlabeled samples using
+    the model's softmax predictions.
+    \item Retain samples where the maximum predicted probability
+    exceeds threshold $\tau$ (initialized at $\tau = 0.90$).
+    \item Retrain the CNN on the combined labeled and pseudo-labeled set.
+    \item Reduce $\tau$ by 0.05 and repeat for three total iterations.
+\end{enumerate}
+This confidence-threshold decay allows the model to incorporate
+pseudo-labeled data conservatively at first, gradually admitting
+more unlabeled samples as predictions improve.
+
+\subsection{Model Evaluation}
+All models are evaluated on the held-out test set. Following the
+ISIC 2018 evaluation strategy \cite{codella2019}, macro-averaged
+F1 score is the primary metric to weight all seven classes equally
+regardless of support. We additionally report overall accuracy,
+per-class one-vs-rest AUC-ROC, and confusion matrices to capture
+systematic misclassification patterns. We compare four conditions:
+KNN, Decision Tree, CNN supervised baseline, and CNN with
+self-training, isolating the contributions of the deep-learning
+architecture and the semi-supervised procedure to overall
+classification performance.
+
+To guarantee that all four conditions are scored identically, we
+implemented a shared utility \texttt{eval\_script.py} exposing a
+single function \texttt{evaluate(model\_name, y\_true, y\_pred, y\_prob)}.
+Given the test labels, predicted classes, and predicted class
+probabilities from any model, it computes macro-F1, accuracy, the
+seven per-class AUC values, and the confusion matrix, and saves a
+combined figure (confusion matrix and one-vs-rest ROC curves) to
+\texttt{<model\_name>\_eval.png}. Each modeling script imports this
+function so the report tables and figures are produced from a
+single, version-controlled implementation.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Data-Preparation Results}
+The data-preparation pipeline executes end-to-end on a standard
+laptop in well under a minute. Of the $10{,}015$ rows in
+\texttt{HAM10000\_metadata}, all images were located on disk
+(0 missing). Lesion-level deduplication removed $2{,}545$ duplicate
+images, yielding $7{,}470$ unique lesions distributed as in
+Table~\ref{tab:classdist}. Stratified splitting produced the
+$5{,}228 / 1{,}121 / 1{,}121$ partition reported in
+Table~\ref{tab:splits}. The labeled/unlabeled split inside the
+training partition produced $520$ labeled and $4{,}708$ unlabeled
+images at the current configuration, with at least
+\texttt{MIN\_SAMPLES\_PER\_CLASS} examples retained for every class
+to prevent any class from being entirely unlabeled.
+
+\subsection{CNN Supervised Baseline: Training Progress}
+The CNN supervised baseline has been implemented and trained for the
+full 20 epochs on the 520-sample labeled training set. Each epoch
+iterates over the labeled loader with batch size 32, applies the
+augmentation pipeline (flip, rotation, color jitter), computes
+class-weighted cross-entropy loss, and updates the weights with
+Adam ($\mathrm{lr} = 1 \times 10^{-4}$). The training loop logs the
+per-epoch mean loss and saves the final weights to
+\texttt{resnet18\_supervised\_baseline.pth} (approximately 44.8\,MB).
+This checkpoint also serves as the initialization for the
+self-training iterations described in Section~\ref{sec:method}.
+Full test-set metrics (macro-F1, accuracy, per-class AUC-ROC,
+confusion matrix) for this checkpoint will be reported alongside
+the three remaining model conditions.
+
+\subsection{Experimental Protocol for Models}
+With the splits above frozen, each of the four model conditions
+is trained on the labeled training set, tuned on the validation
+set, and evaluated once on the test set. For the self-training
+condition we additionally use the unlabeled training set during the
+iterative pseudo-labeling loop, warm-started from the supervised
+baseline checkpoint described above. Macro-F1, accuracy, per-class
+AUC-ROC, and confusion matrices will be reported in a single
+comparative table.
+
+\subsection{Planned Comparative Table}
+Results from the four conditions will be aggregated in a single
+table produced by \texttt{eval\_script.py} (Macro-F1, accuracy,
+per-class AUC, confusion matrix), with one row per condition. A
+template is shown in Table~\ref{tab:results} so collaborators can
+fill in the numbers as each model is evaluated.
+
+\begin{table}[h]
+\centering
+\caption{Comparative results template (to be filled in once all
+four models have been evaluated on the test set with
+\texttt{eval\_script.py}).}
+\label{tab:results}
+\begin{tabular}{lccc}
+\hline
+\textbf{Model} & \textbf{Macro-F1} & \textbf{Accuracy} & \textbf{Mean AUC} \\ \hline
+KNN (PCA + Euclidean)         & --- & --- & --- \\
+Decision Tree (PCA + Gini)    & --- & --- & --- \\
+ResNet-18 supervised baseline & --- & --- & --- \\
+ResNet-18 self-training       & --- & --- & --- \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Expected Findings}
+Based on related work (Section~\ref{sec:related}) and the strongly
+imbalanced class distribution (Table~\ref{tab:classdist}), we
+expect the following ordering on macro-F1:
+KNN $\le$ Decision Tree $<$ CNN supervised $<$ CNN with self-training.
+Classical baselines on PCA-reduced pixels are likely to collapse
+toward the majority class \texttt{nv}, while the CNN with
+self-training should benefit most from the $4{,}708$ unlabeled
+images, especially on minority classes such as \texttt{vasc} and
+\texttt{df}. Confirmation of this ranking, including any failure
+modes (e.g., confirmation bias from incorrect pseudo-labels), is
+the central empirical question of the next phase of the project.
+
+\section{Conclusion}
+\label{sec:conclusion}
+\textbf{Achievements.} We have implemented and validated a
+reproducible data-preparation pipeline for the HAM10000 dataset
+that handles dataset verification, lesion-aware deduplication,
+label encoding, stratified train/validation/test splitting, and
+a configurable semi-supervised labeled/unlabeled split. The
+pipeline is portable across machines (relative paths in CSVs),
+deterministic (fixed random seed), and parameterized through a
+single \texttt{config.py} file, which removes a common source of
+error when collaborators share preprocessed datasets. In addition,
+the CNN supervised baseline has been implemented and trained for
+the full 20 epochs, producing the checkpoint
+\texttt{resnet18\_supervised\_baseline.pth} that will serve both as
+a direct comparison point and as the warm start for the
+self-training iterations. The three remaining conditions (KNN,
+Decision Tree, and CNN with self-training) are specified in detail
+and ready to train on the same fixed splits.
+
+\textbf{Future directions.} The next phase is to (i) evaluate the
+existing supervised baseline on the test set with
+\texttt{eval\_script.py}, (ii) train and evaluate the KNN and
+Decision Tree baselines on PCA-reduced features, and (iii)
+implement and run the iterative self-training loop warm-started
+from \texttt{resnet18\_supervised\_baseline.pth}, completing
+Table~\ref{tab:results}. Beyond the four planned conditions, we
+intend to run sensitivity analyses on (a) the labeled-data
+percentage, (b) the self-training threshold schedule, and (c) the
+choice of CNN backbone (e.g., ResNet-50, EfficientNet-B0) versus
+ResNet-18. We also plan ablations on class-weighted losses versus
+oversampling for the imbalance problem, and a qualitative analysis
+of confusion matrices to identify which lesion types most benefit
+from unlabeled data.
+
+\section{Supplementary Materials}
+\label{sec:supp}
+The LaTeX source of this report and the full project code
+(\texttt{config.py}, \texttt{utils.py}, \texttt{data\_preparation.py},
+\texttt{example\_usage.py}, \texttt{train\_supervised\_baseline.py},
+the shared evaluation utility \texttt{eval\_script.py},
+the trained checkpoint \texttt{resnet18\_supervised\_baseline.pth},
+the prepared CSV splits, and dataset statistics) are available at:
+\begin{center}
+\url{https://github.com/khoipc305/ML_AI_project}
+\end{center}
+The repository \texttt{README.md} documents how to download the
+HAM10000 images from Kaggle \cite{kaggle2018} and reproduce all
+splits with a single command.
+
+\begin{thebibliography}{9}
+
+\bibitem{wu2022skin}
+Y. Wu \textit{et al.}, ``Skin Cancer Classification With Deep
+Learning: A Systematic Review,'' \textit{Frontiers in Oncology},
+vol.~12, 2022, doi: 10.3389/fonc.2022.893972.
+
+\bibitem{tschandl2018}
+P. Tschandl, C. Rosendahl, and H. Kittler, ``The HAM10000 dataset,
+a large collection of multi-source dermatoscopic images of common
+pigmented skin lesions,'' \textit{Sci. Data}, vol.~5, p.~180161,
+Aug.~2018, doi: 10.1038/sdata.2018.161.
+
+\bibitem{b3}
+P. Tschandl, ``The HAM10000 dataset, a large collection of
+multi-source dermatoscopic images of common pigmented skin
+lesions,'' \textit{Harvard Dataverse}, vol.~4, 2018,
+doi: 10.7910/DVN/DBW86T.
+
+\bibitem{kaggle2018}
+K. S. Mader, ``Skin Cancer MNIST: HAM10000,'' Kaggle, 2018.
+[Online]. Available:
+\url{https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000}
+
+\bibitem{codella2019}
+N. Codella \textit{et al.}, ``Skin lesion analysis toward melanoma
+detection 2018: A challenge hosted by the International Skin Imaging
+Collaboration (ISIC),'' arXiv:1902.03368, 2019. [Online]. Available:
+\url{https://arxiv.org/abs/1902.03368}
+
+\bibitem{he2016resnet}
+K. He, X. Zhang, S. Ren, and J. Sun, ``Deep Residual Learning for
+Image Recognition,'' in \textit{Proc. IEEE Conf. Computer Vision
+and Pattern Recognition (CVPR)}, 2016, pp.~770--778,
+doi: 10.1109/CVPR.2016.90.
+
+\bibitem{lee2013pseudo}
+D.-H. Lee, ``Pseudo-Label: The Simple and Efficient Semi-Supervised
+Learning Method for Deep Neural Networks,'' in \textit{ICML
+Workshop on Challenges in Representation Learning}, 2013.
+
+\bibitem{deng2009imagenet}
+J. Deng \textit{et al.}, ``ImageNet: A Large-Scale Hierarchical
+Image Database,'' in \textit{Proc. IEEE Conf. Computer Vision and
+Pattern Recognition (CVPR)}, 2009, pp.~248--255,
+doi: 10.1109/CVPR.2009.5206848.
+
+\end{thebibliography}
+
+\end{document}
