@@ -21,8 +21,9 @@ import random
 random.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
 torch.manual_seed(RANDOM_SEED)
-# ---------------------------------------------
-
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(RANDOM_SEED)
+    
 def main():
     df_test = pd.read_csv('processed_data/test.csv')
     
