@@ -1,5 +1,7 @@
 # evaluation script to collect model metrics for comparison, from eval_script import evaluate
 # to use shared method evaluate
+# sources: 
+# http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,9 +9,6 @@ import matplotlib.gridspec as gridspec
 from sklearn.metrics import (
 	f1_score, accuracy_score, roc_auc_score, confusion_matrix, 
 	ConfusionMatrixDisplay, roc_curve, auc)
-
-# sources: 
-# http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
 
 CLASSES = [0, 1, 2, 3, 4, 5, 6]
 
