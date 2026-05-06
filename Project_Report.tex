@@ -44,8 +44,9 @@ and a configurable labeled/unlabeled split of 520 labeled and
 4{,}708 unlabeled samples), trained a CNN supervised baseline
 (ResNet-18 pretrained on ImageNet, 20 epochs, Adam, class-weighted
 cross-entropy) on the 520-image labeled set, and trained a
-Decision Tree baseline on PCA-reduced features. On the held-out
-test set the Decision Tree obtains $0.668$ accuracy and $0.21$
+Decision Tree baseline on PCA-reduced features. On the held-out test set, 
+the KNN baseline obtains $0.733$ accuracy and $0.20$ macro-F1, 
+the Decision Tree obtains $0.669$ accuracy and $0.21$
 macro-F1, while the ResNet-18 supervised baseline obtains $0.712$
 accuracy and $0.23$ macro-F1; both models still collapse heavily
 onto the majority class \texttt{nv}, motivating the self-training
@@ -383,9 +384,11 @@ confusion matrix) for this checkpoint will be reported alongside
 the three remaining model conditions.
 
 \subsection{Experimental Protocol for Models}
-With the splits above frozen, each of the four model conditions
-is trained on the labeled training set, tuned on the validation
-set, and evaluated once on the test set. For the self-training
+With the splits above frozen, the models are trained on the 
+labeled training set and evaluated once on the test set. 
+With the exception of the KNN baseline (which utilizes internal 
+5-fold cross-validation on the training set), hyperparameters for the 
+remaining conditions are explicitly tuned on the validation set. For the self-training
 condition we additionally use the unlabeled training set during the
 iterative pseudo-labeling loop, warm-started from the supervised
 baseline checkpoint described above. Macro-F1, accuracy, per-class
@@ -411,35 +414,31 @@ self-training CNN are scheduled to be added next.}
 \begin{tabular}{lcc}
 \hline
 \textbf{Model} & \textbf{Macro-F1} & \textbf{Accuracy} \\ \hline
-KNN (PCA + Euclidean)         & TBD   & TBD   \\
-Decision Tree (PCA + Gini)    & 0.21  & 0.668 \\
-ResNet-18 supervised baseline & 0.23  & 0.712 \\
+KNN (PCA + Euclidean)         & 0.2044   & 0.7333   \\
+Decision Tree (PCA + Gini)    & 0.2103  & 0.6690 \\
+ResNet-18 supervised baseline & 0.2357  & 0.7119 \\
 ResNet-18 self-training       & TBD   & TBD   \\
 \hline
 \end{tabular}
 \end{table}
 
-A note on per-class AUC: the current
-\texttt{eval\_script.py} indexes \texttt{y\_prob} with a constant
-column when computing the per-class AUC table, while the ROC
-curves are plotted with the correct per-class probabilities.
-We therefore omit numerical AUC values from
-Table~\ref{tab:results} pending a one-line fix to that helper, and
-plan to report the corrected per-class AUC alongside the remaining
-two models.
-
 \subsection{Findings}
 The ranking observed so far is consistent with the prediction
 from Section~\ref{sec:related}: the Decision Tree baseline is
 measurably weaker than the CNN supervised baseline on both
-macro-F1 ($0.21$ vs $0.23$) and accuracy ($66.8\%$ vs $71.2\%$).
+macro-F1 ($0.21$ vs $0.23$) and accuracy ($66.9\%$ vs $71.2\%$).
 The gap is small in aggregate but the per-class behaviour differs
-substantially. The Decision Tree predicts class \texttt{nv} for
-$888$ of $1{,}121$ test samples ($79\%$) and obtains zero correct
-predictions on \texttt{vasc}, illustrating the textbook failure
+substantially. The gap is small in aggregate but the per-class behaviour differs
+substantially. Both classical baselines illustrate the textbook failure
 mode of classical learners on PCA-reduced pixels under heavy class
-imbalance: the model maximises overall accuracy by collapsing onto
-the majority class. The ResNet-18 supervised baseline retains a
+imbalance: maximizing overall accuracy by collapsing onto
+the majority class. The Decision Tree predicts class \texttt{nv} for
+$888$ of $1{,}121$ test samples ($79\%$). The KNN baseline exhibits an 
+even more extreme collapse; while it achieved the highest superficial 
+accuracy ($73.3\%$), it did so by predicting \texttt{nv} for $1{,}006$ of 
+the $1{,}121$ samples ($90\%$) and entirely failing to identify \texttt{akiec}, 
+\texttt{vasc}, and \texttt{df} (zero correct predictions). 
+The ResNet-18 supervised baseline retains a
 similar overall bias toward \texttt{nv} ($885$ of $1{,}121$
 predictions) but improves recall on \texttt{bkl} from $0.19$ to
 $0.41$, suggesting that the CNN backbone is starting to extract
@@ -475,17 +474,15 @@ deterministic (fixed random seed), and parameterized through a
 single \texttt{config.py} file. Two of the four planned models
 have been trained and evaluated end-to-end on the held-out test
 set using a shared evaluation utility: a Decision Tree baseline on
-PCA-reduced features ($0.21$ macro-F1, $66.8\%$ accuracy) and a
+PCA-reduced features ($0.21$ macro-F1, $66.9\%$ accuracy), a KNN 
+baseline ($0.20$ macro-F1, $73.3\%$ accuracy), and a
 ResNet-18 supervised CNN baseline ($0.23$ macro-F1, $71.2\%$
-accuracy). Both confirm the expected pattern of majority-class
-collapse onto \texttt{nv} and motivate the semi-supervised stage.
-The two remaining conditions (KNN baseline and CNN with
-self-training) are specified in detail and ready to train on the
-same fixed splits.
+accuracy). All three confirm the expected pattern of majority-class
+collapse onto \texttt{nv} and strongly motivate the semi-supervised stage.
+The final remaining condition (CNN with self-training) is specified in 
+detail and ready to train on the same fixed splits.
 
-\textbf{Future directions.} The next phase is to (i) train and
-evaluate the KNN baseline on the same PCA-reduced features used
-for the Decision Tree, (ii) implement and run the iterative
+\textbf{Future directions.} The next phase is to (i) implement and run the iterative
 self-training loop warm-started from
 \texttt{resnet18\_supervised\_baseline.pth}, and (iii) apply the
 one-line fix to \texttt{eval\_script.py} so the per-class AUC
