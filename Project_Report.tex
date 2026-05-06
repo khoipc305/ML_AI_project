@@ -41,15 +41,19 @@ data-preparation pipeline (image verification, lesion-aware
 deduplication, label encoding, stratified train/validation/test
 splitting of 5{,}228 / 1{,}121 / 1{,}121 samples after deduplication,
 and a configurable labeled/unlabeled split of 520 labeled and
-4{,}708 unlabeled samples) and trained a first CNN supervised
-baseline (ResNet-18 pretrained on ImageNet, 20 epochs, Adam,
-class-weighted cross-entropy) on the 520-image labeled set. The
-remaining experiments---KNN and Decision Tree baselines, and
-CNN with iterative self-training---together with held-out test
-evaluation across all four conditions will be reported next.
-Preliminary expectations are that the self-training CNN will
-outperform both classical baselines and the supervised-only CNN
-under the same labeled-data budget.
+4{,}708 unlabeled samples), trained a CNN supervised baseline
+(ResNet-18 pretrained on ImageNet, 20 epochs, Adam, class-weighted
+cross-entropy) on the 520-image labeled set, and trained a
+Decision Tree baseline on PCA-reduced features. On the held-out
+test set the Decision Tree obtains $0.668$ accuracy and $0.21$
+macro-F1, while the ResNet-18 supervised baseline obtains $0.712$
+accuracy and $0.23$ macro-F1; both models still collapse heavily
+onto the majority class \texttt{nv}, motivating the self-training
+stage. The remaining experiments---KNN baseline and CNN with
+iterative self-training---will be reported next, and our working
+hypothesis is that the self-training CNN will close the recall
+gap on the smallest classes (\texttt{akiec}, \texttt{vasc},
+\texttt{df}) where both completed models currently score near zero.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -388,28 +392,76 @@ baseline checkpoint described above. Macro-F1, accuracy, per-class
 AUC-ROC, and confusion matrices will be reported in a single
 comparative table.
 
-\subsection{Planned Comparative Reporting}
-Results from the four conditions will be aggregated in a single
-table produced by \texttt{eval\_script.py}, with one row per model
-and columns for macro-F1, accuracy, mean per-class AUC, and a
-reference to the corresponding confusion matrix figure. The same
-script also saves a per-model PNG figure with the confusion matrix
-and one-vs-rest ROC curves, which will be included as
-Figures~1--4 in the next iteration of this report once each model
-has been evaluated on the test set.
+\subsection{Comparative Test-Set Results}
+Two of the four planned conditions have now been evaluated on the
+held-out test set (1{,}121 samples) using the shared
+\texttt{eval\_script.py} utility. Macro-F1 and accuracy are
+computed directly from the confusion matrices saved by each
+evaluation run; the corresponding figures are saved as
+\texttt{Decision\_Tree\_Baseline\_eval.png} and
+\texttt{ResNet-18 Supervised Baseline\_eval.png} in the
+repository. Table~\ref{tab:results} summarises the headline
+metrics so far.
 
-\subsection{Expected Findings}
-Based on related work (Section~\ref{sec:related}) and the strongly
-imbalanced class distribution (Table~\ref{tab:classdist}), we
-expect the following ordering on macro-F1:
+\begin{table}[h]
+\centering
+\caption{Test-set results to date (1{,}121 samples). KNN and the
+self-training CNN are scheduled to be added next.}
+\label{tab:results}
+\begin{tabular}{lcc}
+\hline
+\textbf{Model} & \textbf{Macro-F1} & \textbf{Accuracy} \\ \hline
+KNN (PCA + Euclidean)         & TBD   & TBD   \\
+Decision Tree (PCA + Gini)    & 0.21  & 0.668 \\
+ResNet-18 supervised baseline & 0.23  & 0.712 \\
+ResNet-18 self-training       & TBD   & TBD   \\
+\hline
+\end{tabular}
+\end{table}
+
+A note on per-class AUC: the current
+\texttt{eval\_script.py} indexes \texttt{y\_prob} with a constant
+column when computing the per-class AUC table, while the ROC
+curves are plotted with the correct per-class probabilities.
+We therefore omit numerical AUC values from
+Table~\ref{tab:results} pending a one-line fix to that helper, and
+plan to report the corrected per-class AUC alongside the remaining
+two models.
+
+\subsection{Findings}
+The ranking observed so far is consistent with the prediction
+from Section~\ref{sec:related}: the Decision Tree baseline is
+measurably weaker than the CNN supervised baseline on both
+macro-F1 ($0.21$ vs $0.23$) and accuracy ($66.8\%$ vs $71.2\%$).
+The gap is small in aggregate but the per-class behaviour differs
+substantially. The Decision Tree predicts class \texttt{nv} for
+$888$ of $1{,}121$ test samples ($79\%$) and obtains zero correct
+predictions on \texttt{vasc}, illustrating the textbook failure
+mode of classical learners on PCA-reduced pixels under heavy class
+imbalance: the model maximises overall accuracy by collapsing onto
+the majority class. The ResNet-18 supervised baseline retains a
+similar overall bias toward \texttt{nv} ($885$ of $1{,}121$
+predictions) but improves recall on \texttt{bkl} from $0.19$ to
+$0.41$, suggesting that the CNN backbone is starting to extract
+more discriminative features for at least the second-largest
+minority class. However, recall on the three smallest classes
+(\texttt{akiec}, \texttt{vasc}, \texttt{df}) is still effectively
+zero in both models, which is precisely the regime where the
+planned self-training CNN should provide its largest benefit by
+incorporating the $4{,}708$ unlabeled images.
+
+\subsection{Expected Findings for Remaining Models}
+Based on the patterns above and on related work
+(Section~\ref{sec:related}), we expect the following final
+ordering on macro-F1:
 KNN $\le$ Decision Tree $<$ CNN supervised $<$ CNN with self-training.
-Classical baselines on PCA-reduced pixels are likely to collapse
-toward the majority class \texttt{nv}, while the CNN with
-self-training should benefit most from the $4{,}708$ unlabeled
-images, especially on minority classes such as \texttt{vasc} and
-\texttt{df}. Confirmation of this ranking, including any failure
-modes (e.g., confirmation bias from incorrect pseudo-labels), is
-the central empirical question of the next phase of the project.
+KNN on PCA-reduced pixels is likely to behave similarly to the
+Decision Tree (collapsing onto \texttt{nv}), while the CNN with
+self-training should benefit most from the unlabeled pool,
+especially on minority classes. Confirmation of this ranking,
+including any failure modes such as confirmation bias from
+incorrect pseudo-labels, is the central empirical question of the
+next iteration.
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -420,25 +472,25 @@ label encoding, stratified train/validation/test splitting, and
 a configurable semi-supervised labeled/unlabeled split. The
 pipeline is portable across machines (relative paths in CSVs),
 deterministic (fixed random seed), and parameterized through a
-single \texttt{config.py} file, which removes a common source of
-error when collaborators share preprocessed datasets. In addition,
-the CNN supervised baseline has been implemented and trained for
-the full 20 epochs, producing the checkpoint
-\texttt{resnet18\_supervised\_baseline.pth} that will serve both as
-a direct comparison point and as the warm start for the
-self-training iterations. The three remaining conditions (KNN,
-Decision Tree, and CNN with self-training) are specified in detail
-and ready to train on the same fixed splits.
+single \texttt{config.py} file. Two of the four planned models
+have been trained and evaluated end-to-end on the held-out test
+set using a shared evaluation utility: a Decision Tree baseline on
+PCA-reduced features ($0.21$ macro-F1, $66.8\%$ accuracy) and a
+ResNet-18 supervised CNN baseline ($0.23$ macro-F1, $71.2\%$
+accuracy). Both confirm the expected pattern of majority-class
+collapse onto \texttt{nv} and motivate the semi-supervised stage.
+The two remaining conditions (KNN baseline and CNN with
+self-training) are specified in detail and ready to train on the
+same fixed splits.
 
-\textbf{Future directions.} The next phase is to (i) evaluate the
-existing supervised baseline on the test set with
-\texttt{eval\_script.py}, (ii) train and evaluate the KNN and
-Decision Tree baselines on PCA-reduced features, and (iii)
-implement and run the iterative self-training loop warm-started
-from \texttt{resnet18\_supervised\_baseline.pth}, then aggregate
-all four sets of metrics into a single comparative table and the
-corresponding confusion matrix and ROC figures produced by
-\texttt{eval\_script.py}. Beyond the four planned conditions, we
+\textbf{Future directions.} The next phase is to (i) train and
+evaluate the KNN baseline on the same PCA-reduced features used
+for the Decision Tree, (ii) implement and run the iterative
+self-training loop warm-started from
+\texttt{resnet18\_supervised\_baseline.pth}, and (iii) apply the
+one-line fix to \texttt{eval\_script.py} so the per-class AUC
+column in Table~\ref{tab:results} can be reported. Beyond the
+four planned conditions, we
 intend to run sensitivity analyses on (a) the labeled-data
 percentage, (b) the self-training threshold schedule, and (c) the
 choice of CNN backbone (e.g., ResNet-50, EfficientNet-B0) versus
@@ -452,9 +504,12 @@ from unlabeled data.
 The LaTeX source of this report and the full project code
 (\texttt{config.py}, \texttt{utils.py}, \texttt{data\_preparation.py},
 \texttt{example\_usage.py}, \texttt{train\_supervised\_baseline.py},
+\texttt{evaluate\_supervised\_baseline.py},
+\texttt{train\_decision\_tree.py},
 the shared evaluation utility \texttt{eval\_script.py},
 the trained checkpoint \texttt{resnet18\_supervised\_baseline.pth},
-the prepared CSV splits, and dataset statistics) are available at:
+the prepared CSV splits, the per-model evaluation figures, and
+dataset statistics) are available at:
 \begin{center}
 \url{https://github.com/khoipc305/ML_AI_project}
 \end{center}
